@@ -67,7 +67,7 @@
             growing="true" growingThreshold="5"
             class="sapUiResponsiveMargin" width="auto" 
             items="{
-                path: '/Customers',
+                path: '/UX_Customer',
                 sorter: [
                     {path: 'City', group: true},
                     {path: 'CustomerName'}
@@ -90,7 +90,7 @@
                 <Column minScreenWidth="Tablet" demandPopin="true"><header><Text text="{i18n>emailLabelText}"/></header></Column>
             </columns>
             <items>
-                <ColumnListItem>
+                <ColumnListItem type="Navigation" press=".onNavToDetails">
                 <cells>
                     <ObjectIdentifier title="{CustomerName}"/>
                     <Text text="{Street}"/>
